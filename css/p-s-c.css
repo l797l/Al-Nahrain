@@ -1,0 +1,865 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Katibeh", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #f8f5f2;
+    height: 100%;
+
+}
+
+
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    background: #006A71;
+    animation: loa infinite 1s ease;
+}
+
+@keyframes loa {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    25% {
+        transform: rotate(90deg);
+
+    }
+
+    50% {
+        transform: rotate(180deg);
+
+    }
+
+    75% {
+        transform: rotate(270deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+
+    }
+}
+
+.main-top-home {
+    display: flex;
+    position: fixed;
+    background-color: #006A71;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 30px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    border-top: yellow solid 1px;
+    padding-left: 40px;
+    justify-content: space-between;
+    z-index: 30;
+
+
+}
+
+.main-top-home .text-main a {
+    margin: 3px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.8s ease;
+
+}
+
+.main-top-home .text-main a:hover,
+.main-top-home i:hover,
+.top-home a:hover {
+    color: #FFBF00;
+
+
+}
+
+.main-top-home i {
+    text-align: center;
+    margin: 3px 0px;
+    margin-top: 7px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.8s ease;
+
+
+}
+
+
+.main-top-home i:hover {
+    transform: rotateY(360deg);
+
+}
+
+
+
+.main-top-home a {
+    text-align: center;
+    margin: 3px 5px;
+    margin-top: 7px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.8s ease;
+
+
+}
+
+
+
+
+.top-home {
+
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #006A71;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    height: 20px;
+    padding: 25px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s ease;
+
+    z-index: 31;
+
+
+}
+
+.top-home a {
+    margin: 15px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.8s ease;
+
+
+
+
+}
+
+.top-home .i-icon {
+    display: none;
+}
+
+.top-homee {
+    background: #f8f5f2;
+}
+
+.top-homee a {
+    color: #000;
+}
+
+
+
+.about-s-c-phone-top-home {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    transition: all 0.8s ease-out;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.about-s-c-phone-top-home .text-main-about-phone-top-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.about-s-c-phone-top-home .text-main-about-phone-top-home i {
+    font-size: 50px;
+    color: #e0fce5;
+
+}
+
+.about-s-c-phone-top-home .text-main-about-phone-top-home div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-s-c-phone-top-home .text-main-about-phone-top-home p {
+    font-size: 10px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 800;
+
+    text-align: center;
+    color: #e0fce5;
+
+}
+
+.top-homee .about-s-c-phone-top-home .text-main-about-phone-top-home i,
+.top-homee .about-s-c-phone-top-home .text-main-about-phone-top-home p {
+    color: #006A71;
+
+}
+
+
+
+
+
+
+
+
+.top-home-phone {
+    background-color: #0069717f;
+    position: fixed;
+    display: flex;
+    max-width: 0px;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 50;
+    transition: all 0.8s ease;
+    backdrop-filter: blur(8px);
+
+
+}
+
+
+.show-top-home-phone {
+    max-width: 200px;
+    z-index: 50;
+
+
+}
+
+
+
+
+.show-top-home-phone .a-div a,
+.show-top-home-phone .icon-a i,
+.show-top-home-phone .about-s-c-phone {
+    transform: translateX(0) !important;
+
+}
+
+.top-home-phone .a-div a {
+    margin: 15px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    transform: translateX(-500px);
+    transition: all 0.8s ease;
+
+
+}
+
+.top-home-phone .icon-a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-home-phone .icon-a i {
+    text-align: center;
+    margin: 3px 5px;
+    margin-top: 7px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.8s ease;
+    transform: translateX(-500px);
+    transition: all 0.8s ease-out;
+
+
+
+}
+
+.top-home-phone .a-div a:hover,
+.top-home-phone .icon-a i:hover {
+    color: #FFBF00;
+
+}
+
+
+.about-s-c-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 30px;
+    flex-direction: column;
+    transform: translate(-500px);
+    transition: all 0.8s ease-out;
+}
+
+.about-s-c-phone .text-main-about-phone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.about-s-c-phone .text-main-about-phone i {
+    font-size: 30px;
+    color: #e0fce5;
+
+}
+
+.about-s-c-phone .text-main-about-phone div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-s-c-phone .text-main-about-phone p {
+    font-size: 10px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 800;
+
+    text-align: center;
+    color: #e0fce5;
+
+} 
+
+
+
+
+
+.main {
+    margin-top: 80px;
+    background: #006A71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 25px 0;
+    flex-direction: column;
+
+
+}
+
+.main p {
+    margin: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.about-s-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px;
+    flex-direction: column;
+}
+
+.about-s-c .text-main-about {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.about-s-c .text-main-about i {
+    font-size: 300px;
+
+}
+
+.about-s-c .text-main-about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-s-c .text-main-about p {
+    font-size: 30px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 800;
+
+    text-align: center;
+
+}
+
+.about-s-c .ex-text {
+    display: flex;
+    text-align: end;
+    padding: 0 3.2em;
+}
+
+.about-s-c .ex-text p {
+    font-size: 22px;
+    font-family: "Katibeh", serif;
+}
+
+.ex-text p span {
+    font-size: 25px;
+    color: #006A71;
+
+}
+
+
+
+
+
+
+
+.address-main {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #EFE6DD;
+    padding: 30px 0;
+}
+
+.address-main h2 {
+
+    margin: 20px 0;
+    color: #4B0000;
+    font-size: 35px;
+}
+
+
+.address-main p {
+
+    color: #4b0000a8;
+    font-size: 25px;
+
+}
+
+
+
+.lessones {
+    display: flex;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    transition: all 1s ease;
+
+
+}
+
+.lessones h3 {
+    font-size: 28px;
+
+    margin: 30px 0;
+
+}
+
+.exp-of-the-lesson {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 1s ease;
+
+}
+
+.exp-of-the-lesson .lesson {
+
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e1e1e1a1;
+    margin-left: 20px;
+    width: 200px;
+    box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.8);
+    transition: all ease 0.8s;
+    cursor: pointer;
+
+
+
+}
+
+
+
+
+.exp-of-the-lesson .lesson .addres-lesson {
+    width: 100%;
+    background: #006A71;
+    text-align: center;
+    padding: 30px 0px;
+    color: #f9f9f9;
+    font-size: 22px;
+    transition: all ease 0.8s;
+    height: 100%;
+
+
+
+
+}
+
+.exp-of-the-lesson .lesson h4:hover {
+    background: #006971b1;
+
+
+
+}
+
+.exp-of-the-lesson .lesson:hover {
+    transform: translateY(-5px);
+
+
+
+}
+
+
+
+.div-p {
+
+    display: flex;
+    max-height: 0;
+    opacity: 0;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    padding: 0 10px;
+    transition: all ease 0.8s;
+    overflow: hidden;
+
+}
+
+.show-lesson {
+    max-height: 100%;
+    opacity: 1;
+    transition: all 1s ease;
+
+
+
+}
+
+
+
+
+.p-less {
+
+    margin-bottom: 10px;
+    font-size: 17px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+
+
+
+}
+
+.p-less:nth-child(even) {
+    transform: translateX(-200px);
+    transition: all 1s ease;
+
+}
+
+.p-less:nth-child(odd) {
+    transform: translateX(200px);
+    transition: all 1s ease;
+
+}
+
+
+
+
+.show-lesson-p {
+    transform: translateX(0px) !important;
+
+    max-height: 100%;
+    opacity: 1;
+    transition: all 1s ease;
+
+}
+
+
+
+
+.main-bottom-home {
+    position: relative;
+    background-image: url(IMG_3335.JPG);
+
+    width: 100%;
+    min-height: 65vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.bottom-home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #006A71;
+
+}
+
+.bottom-home .text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    margin-right: 100px;
+}
+
+.bottom-home .text p {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+}
+
+.bottom-home .text a {
+    margin-bottom: 10px;
+
+    color: #f9f9f9;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.8s ease;
+
+}
+
+.bottom-home .text label {
+    margin-bottom: 5px;
+    margin-right: 6px;
+    color: #f9f9f9;
+    font-size: 17px;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.bottom-home .text i {
+    margin-bottom: 5px;
+
+    color: #f9f9f9;
+    font-size: 17px;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.text div:hover i {
+    transform: rotateY(360deg);
+
+}
+
+
+.bottom-home .text div {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.text div:hover label,
+.text div:hover i,
+.bottom-home .text a:hover {
+    color: #FFBF00;
+
+
+}
+
+
+.bottom-home .text a:hover {
+    transform: translateX(10px);
+}
+
+
+.bottom-home .icon-bottom-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+
+
+.bottom-home .icon-bottom-home i {
+    font-size: 170px;
+    color: #e0fce5;
+
+
+}
+
+
+
+.bottom-home .icon-bottom-home p {
+    color: #f9f9f9;
+    font-size: 20px;
+    font-family: "Kufam", sans-serif;
+    font-weight: 800;
+
+    text-align: center;
+
+}
+
+.icon-bottom-home-main .location-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon-bottom-home-main .location-email {
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end p {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #333333;
+
+
+}
+
+
+
+@media (max-width: 600px) {
+    .about-s-c {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 100px 0;
+        flex-direction: column;
+
+    }
+
+    .main-top-home {
+        display: none;
+    }
+
+    .top-home {
+        top: 0;
+        justify-content: start;
+        padding: 30px;
+        border-top: 1px solid #FFBF00;
+
+
+    }
+
+    .about-s-c-phone-top-home {
+        display: flex;
+    }
+
+    .main {
+        margin-top: 50px;
+
+    }
+
+    .bottom-home {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #006A71;
+
+    }
+
+    .bottom-home .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+
+    }
+
+    .top-home a {
+        display: none;
+
+    }
+
+
+
+    .top-home .i-icon {
+        display: block !important;
+
+    }
+
+
+
+
+
+
+}
